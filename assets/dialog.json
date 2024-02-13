@@ -1,0 +1,65 @@
+{
+    "fromMe": [{
+        "id": "0000",
+        "details": [
+            [
+                "宝情人节快乐😚😚"
+            ]
+        ],
+        "responses": [{
+            "content": "情人节快乐宝😚😚",
+            "nextAuthor": ["0001"]
+        }]
+    }, {
+        "id": "0001",
+        "details": [
+            [
+                "<img src='img/bao.jpg'>",
+                "遇到老婆大人🥺🥺",
+                "是我这辈子最幸福的事情捏",
+                "<img src='img/bg.jpg'>",
+                "suki"
+            ]
+        ],
+        "responses": [{
+            "content": "kisu",
+            "nextAuthor": ["0002"]
+        }]
+    }, {
+        "id": "0002",
+        "details": [
+            [
+                "虽然没有准备什么礼物🥺",
+                "但想到宝喜欢玩解密游戏😚",
+                "所以给宝准备了个小解密捏😘",
+                "通关后给宝奖励捏🥳",
+                "解密已经开始咯！",
+                "点击<a href='./index.html' target='_blank' title='链接'>链接</a>跳转捏"
+            ]
+        ],
+        "responses": [{
+            "content": "好捏",
+            "nextAuthor": ["0003"]
+        }]
+    }, {
+        "id": "0003",
+        "details": [
+            [
+                "这才是真的<a href='./puzzle/puzzle1.html' target='_blank' title='链接'>链接</a>捏😚"
+            ]
+        ],
+        "responses": [{
+            "content": "我不想说话",
+            "nextAuthor": ["0004"]
+        }]
+    }, {
+        "id": "0004",
+        "details": [
+            [
+                "qaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqqaq",
+                "<img src='img/touxiang2.png'>"
+            ]
+        ]
+    }],
+    "fromUser": []
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>第六关</title>
+        <link rel="shortcut icon" type="image/x-icon" href="./img/puzzleico.jpg"/>
+        <meta name="viewport" content="width=device-width,user-scalable=no" />
+        <style type="text/css">
+            body {
+            	font-family: Lato;
+            	font-size: 14px;
+            	width:100%;
+            	height:100%
+            }
+            .center-in-center-4{
+            	position: absolute;
+            	top: 40%;
+            	left: 50%;
+            	-webkit-transform: translate(-50%, -50%);
+            	-moz-transform: translate(-50%, -50%);
+            	-ms-transform: translate(-50%, -50%);
+            	-o-transform: translate(-50%, -50%);
+            	transform: translate(-50%, -50%);
+            }
+        </style>
+        <script type="text/javascript">
+            function rand(min, max){
+                 return Math.round(Math.random()*(max-min) + min)
+            }
+            
+            list = [
+                "亲亲老婆😚",
+                "宝困了莫🥺",
+                "抱抱老婆🥺",
+                "不能留空空噢🥳",
+                "不清楚，不确定，不知道😚"
+            ];
+            
+            function alert_sentence(){
+                var l, s, rdnum;
+                l = list.length;
+                rdnum = rand(-0.5, l - 0.501);
+                s = list[rdnum];
+                alert(s);
+            }
+            
+            function judge2(){
+                var search_text = document.getElementById("srk").value; //获取id为srk的input值
+                if(search_text == "5" ){
+                    window.open("./zzz/index.html");
+                }
+                else if(search_text == ""){
+                    alert_sentence();
+                }
+                else{
+                    alert("囙答諎誤，倒退┅關......");
+                    window.open("./puzzle4.html");
+                }
+            }
+            function tips(){
+                alert("老婆大人嘿嘿嘿🤤🤤");
+            }
+        </script>
+	</head>
+	<body>
+        <div class="center-in-center-4">
+            <div align="center">
+                <img src="./img/5.gif" width=20% onclick="judge2()"/></BR></BR>
+                <div style="color: black; font-weight: 1000; color: white;">
+                    请问现在是第几关？（阿拉伯数字作答）</BR>
+                </div>
+                </BR>
+                <input id="srk" value="" style="width: 350px; height: 25px;" autofocus="autofocus">
+            </div>
+        </div>
+    </body>
+    <div style="position:fixed; bottom:0; right:0;">
+        <img src="./img/2.gif" width=70%/ onclick="tips()">
+    </div>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>第三关</title>
+        <link rel="shortcut icon" type="image/x-icon" href="./img/puzzleico.jpg"/>
+        <meta name="viewport" content="width=device-width,user-scalable=no" />
+        <style type="text/css">
+            body {
+            	font-family: Lato;
+            	font-size: 14px;
+            	width:100%;
+            	height:100%;
+            	background: url(../img/bg.png) center;
+            	background-size: 15%
+            }
+            .center-in-center-4{
+            	position: absolute;
+            	top: 40%;
+            	left: 50%;
+            	-webkit-transform: translate(-50%, -50%);
+            	-moz-transform: translate(-50%, -50%);
+            	-ms-transform: translate(-50%, -50%);
+            	-o-transform: translate(-50%, -50%);
+            	transform: translate(-50%, -50%);
+            }
+        </style>
+        <script type="text/javascript">
+            function rand(min, max){
+                 return Math.round(Math.random()*(max-min) + min)
+            }
+            
+            list = [
+                "亲亲老婆😚",
+                "宝困了莫🥺",
+                "抱抱老婆🥺",
+                "不能留空空噢🥳",
+                "不清楚，不确定，不知道😚"
+            ];
+            
+            function alert_sentence(){
+                var l, s, rdnum;
+                l = list.length;
+                rdnum = rand(-0.5, l - 0.501);
+                s = list[rdnum];
+                alert(s);
+            }
+            
+            function judge2(){
+                var search_text = document.getElementById("srk").value; //获取id为srk的input值
+                if(search_text == "3303"){
+                    alert("回答正确捏，钥匙给宝宝🔑，复制粘贴放在标准答案后点击图片");
+                }
+                else if(search_text == "iloveyou🔑" || search_text == "i love you🔑" || search_text == "I Love You🔑" || search_text == "I love you🔑" ){
+                    alert("我也喜欢宝捏😚😚");
+                    window.open("./puzzle4.html");
+                }
+                else if(search_text == "iloveyou" || search_text == "i love you" || search_text == "I Love You" || search_text == "I love you" ){
+                    alert("这是标准答案捏😚😚");
+                }
+                else if(search_text == ""){
+                    alert_sentence();
+                }
+                else{
+                    alert("回答错误qaq😴");
+                }
+            }
+            function tips(){
+                alert("计算一下捏");
+            }
+        </script>
+	</head>
+	<body>
+        <div class="center-in-center-4">
+            <div align="center">
+                <img src="./img/number.jpg" width=20% onclick="judge2()" /></BR></BR>
+                <div style="color: black; font-weight: 1000;">
+                    上面这个表达式的一半是什么呢？（自然底数 e 取 2.71828，结果四舍五入取整）
+                </div>
+                </BR>
+                <input id="srk" value="" style="width: 350px; height: 25px;" autofocus="autofocus">
+            </div>
+        </div>
+    </body>
+    <div style="position:fixed; bottom:0; right:0;">
+        <img src="./img/2.gif" width=70%/ onclick="tips()">
+    </div>
+</html>
